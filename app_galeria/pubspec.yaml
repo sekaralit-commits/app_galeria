@@ -1,0 +1,45 @@
+name: app_galeria
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/app_galeria_icon.png
+    - assets/splash_galeria.png
+    - assets/when_the_wind_rises.jpeg
+    - assets/blue_haired.jpeg
+    - assets/lizzy.jpeg
+    - assets/marc.jpeg
+
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/splash_galeria.png"
+  android: true
+  ios: true
+  web: true
+  android_gravity: center
+  ios_content_mode: center
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_galeria_icon.png"
+  remove_alpha_ios: true
